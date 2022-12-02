@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { LogInPage } from './pages/LogInPage';
 import { UserInfoPage } from './pages/UserInfoPage';
 
 export const Routes = () => {
@@ -8,6 +9,7 @@ export const Routes = () => {
                 <Route path="/" exact>
                     <UserInfoPage />
                 </Route>
+                <Route path="/login"> <LogInPage/></Route>
             </Switch>
         </Router>
     );
